@@ -141,4 +141,11 @@
     .carousel-caption > p{
         text-align: center;
     }
+    /* Hide desktop only elements, show mobile only elements */
+    .desktop-only{
+        display: none;
+    }
+    .mobile-only{
+        display: flex;
+    }
 }
