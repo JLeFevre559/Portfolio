@@ -1,0 +1,144 @@
+@media only screen and (max-width: 1000px) {
+    /* Styles specific to mobile devices */
+    *{
+        height: fit-content;
+    }
+    body {
+        background-color: var(--background-color);
+        font-size: 14px;
+    }
+    .body-wrapper {
+        padding: 0;
+        margin: 0;
+    }
+    .content {
+        padding: 10px;
+    }
+
+    nav {
+        display: none; /* Hide the navigation menu */
+    }
+    .carousel{
+        padding:0%;
+    }
+    .carousel-indicators button {
+        color: transparent;
+    }
+    .carousel-indicators button.active{
+        color: var(--text-heading-color);
+    }
+    .carousel-inner .carousel-item {
+        transition: -webkit-transform .3s ease;
+        transition: transform .3s ease;
+        transition: transform .3s ease, -webkit-transform .3s ease;
+      }
+    #myCarousel {
+        padding: 1em;
+    }
+    .carousel-indicators {
+        position:relative;
+        margin:auto;
+        width:50vw;
+    }
+    .carousel-indicators [data-bs-target] {
+        text-indent: unset;
+        color: transparent;
+        width:1.2em;
+    }
+    .carousel-caption h1{
+        display: none
+    }
+    .button-text {
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        font-size: 1.5em;
+    }
+    ul, li, table {
+        font-size: .8em;
+    }
+    p{
+        font-size: 1em;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    }
+    tr:nth-child(odd) {
+    background: var(--secondary-color);
+    }
+    td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    }
+    td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    }
+    /* table customizations specific to education table */
+    .ed-table td:nth-of-type(1):before {
+    content: "Graduation Date";
+    }
+    .ed-table td:nth-of-type(2):before {
+    content: "Institution";
+    }
+    .ed-table td:nth-of-type(3):before {
+    content: "Degree";
+    }
+    .ed-table td:nth-of-type(4):before {
+    content: "GPA";
+    }
+
+    /* table customizations specific to experience table */
+    .exp-table td:nth-of-type(1):before {
+    content: "Start-End Date";
+    }
+    .exp-table td:nth-of-type(2):before {
+    content: "Title";
+    }
+    .exp-table td:nth-of-type(3):before {
+    content: "Location";
+    }
+    .exp-table td:nth-of-type(4):before {
+    content: "Company";
+    }
+    .exp-table td:nth-of-type(5):before {
+        content: "Description";
+    }
+
+    /*set carousel controls to be on screen, important to remove horizontal scrolling */
+    .carousel-control-next {
+        right: 0;
+        position: absolute;
+    }
+    .carousel-control-prev {
+        left: 0;
+        position: absolute;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        top:1.26vh;
+    }
+
+    .carousel-inner {
+        height: max-content;
+    }
+    .carousel-caption > p{
+        text-align: center;
+    }
+}
