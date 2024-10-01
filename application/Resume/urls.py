@@ -1,4 +1,4 @@
-# example/urls.py
+# Resume/urls.py
 from django.urls import path, include
 from Resume.views import (
     Index,
