@@ -147,6 +147,7 @@ img{
   display:flex;
   position:absolute;
   height:100vh;
+  min-width:100vw;
   overflow: clip;
   z-index: -1;
   border-radius: 0%;

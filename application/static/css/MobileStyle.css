@@ -7,10 +7,8 @@
         background-color: var(--background-color-light);
         color: var(--font-color-light);
         font-size: 14px;
-        flex-direction: column-reverse;
         height: 100vh;
         min-height: fit-content;
-        justify-content: space-between;
     }
     .body-wrapper {
         padding: 0;
@@ -23,6 +21,7 @@
     .background-pic{
         width:100vw;
         height:unset;
+        min-height: 100vh;
     }
     .hamburger-menu {
         appearance: none;
@@ -54,6 +53,10 @@
         align-items: center;
         padding: 0;
         margin: 0;
+    }
+    .navbar-box{
+        position:absolute;
+        bottom:0;
     }
     .footer{
         display:none;
