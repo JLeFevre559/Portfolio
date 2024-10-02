@@ -5,6 +5,11 @@
 {% block title %}
 {% endblock title %}
 
+{% block background %}
+<img src="{% static 'images/solar_eclipse.jpg' %}" alt="Partial Solar Eclipse" title="Credit: Joel LeFevre" class="desktop-only background-pic">
+<img src="{% static 'images/library_tree.jpg' %}" alt="Tree Viewed From Library" title="Credit: Joel LeFevre" class="mobile-only background-pic">
+{% endblock background %}
+
 {% block content %}
 <div id="myCarousel" class="carousel slide ms-6" data-bs-ride="carousel" data-bs-interval="25000">
   <div class="carousel-indicators button-container">

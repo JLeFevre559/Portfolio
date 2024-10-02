@@ -4,8 +4,13 @@
         height: fit-content;
     }
     body {
-        background-color: var(--background-color);
+        background-color: var(--background-color-light);
+        color: var(--font-color-light);
         font-size: 14px;
+        flex-direction: column-reverse;
+        height: 100vh;
+        min-height: fit-content;
+        justify-content: space-between;
     }
     .body-wrapper {
         padding: 0;
@@ -15,8 +20,43 @@
         padding: 10px;
     }
 
-    nav {
-        display: none; /* Hide the navigation menu */
+    .background-pic{
+        width:100vw;
+        height:unset;
+    }
+    .hamburger-menu {
+        appearance: none;
+        font-size: 0;
+        width: 14vw;
+        height: 7vh;
+        border: 0;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        
+        span {
+          display: block;
+          width: 60%;
+          height: 2px;
+          background: #000;
+          margin-bottom: 5px;
+          margin-left: auto;
+          margin-right: auto;
+          border: .3px solid white;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .footer{
+        display:none;
     }
     .carousel{
         padding:0%;
@@ -25,7 +65,7 @@
         color: transparent;
     }
     .carousel-indicators button.active{
-        color: var(--text-heading-color);
+        color: var(--text-heading-color-light);
     }
     .carousel-inner .carousel-item {
         transition: -webkit-transform .3s ease;
@@ -46,7 +86,14 @@
         width:1.2em;
     }
     .carousel-caption h1{
-        display: none
+        display: none;
+        color: var(--text-heading-color-light);
+    }
+    .carousel-inner{
+        background-color: var(--background-color-light);
+        border: 0px solid var(--border-color);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 5px black;
     }
     .button-text {
         position: absolute;
@@ -71,12 +118,12 @@
     left: -9999px;
     }
     tr:nth-child(odd) {
-    background: var(--secondary-color);
+    background: transparent;
     }
     td {
     /* Behave  like a "row" */
     border: none;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-color);
     position: relative;
     padding-left: 50%;
     }
@@ -103,6 +150,10 @@
     .ed-table td:nth-of-type(4):before {
     content: "GPA";
     }
+    .ed-table td:nth-of-type(4){
+        border-bottom: 2px solid black;
+        margin-bottom: 10px;
+    }
 
     /* table customizations specific to experience table */
     .exp-table td:nth-of-type(1):before {
@@ -119,6 +170,10 @@
     }
     .exp-table td:nth-of-type(5):before {
         content: "Description";
+    }
+    .exp-table td:nth-of-type(4){
+        border-bottom: 2px solid black;
+        margin-bottom: 10px;
     }
 
     /*set carousel controls to be on screen, important to remove horizontal scrolling */
@@ -147,5 +202,16 @@
     }
     .mobile-only{
         display: flex;
+    }
+    p, ul, li, table{
+        -webkit-text-stroke-width: 0;
+        -webkit-text-stroke-color: var(--stroke-color-light);
+      }
+    a{
+        -webkit-text-stroke-width: 0;
+        -webkit-text-stroke-color: var(--link-stroke-color-light);
+    }
+    h2, h3, h4, h5, h6, p, ul, li, table{
+        color: var(--font-color-light);
     }
 }

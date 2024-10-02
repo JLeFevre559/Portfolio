@@ -1,11 +1,19 @@
 :root{
   --main-color: rgb(40,40,40);
+  --main-color-light: rgb(214, 214, 214);
   --background-color: black;
+  --background-color-light: rgb(255,255,255,0.7);
   --secondary-color: rgb(30, 37, 75);
+  --secondary-color-light: rgb(71, 123, 219);
   --border-color: rgb(0, 31, 167);
   --border-radius: 0%;
   --text-heading-color: rgb(50,200,255);
+  --text-heading-color-light: rgb(50,200,255);
   --font-color: white;
+  --font-color-light: black;
+  --stroke-color: black;
+  --stroke-color-light: white;
+  --link-stroke-color: rgb(0, 0, 0);
 }
 *{
   max-width: 100%;
@@ -20,7 +28,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--font-color);
+  overflow-x: hidden;
 }
 .navbar{
   /* background-color: var(--main-color); */
@@ -28,8 +36,31 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: start;
+  padding: 0;
+  /* border: 3px solid var(--border-color); */
+}
+.home-button{
+  width: 15vh;
+  padding: 2vh;
+}
+.home-button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+}
+.footer{
+  /* background-color: var(--main-color); */
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
   padding: 1em;
   /* border: 3px solid var(--border-color); */
+  position:absolute;
+  bottom: 0;
+  left: 0;
 }
 .body-wrapper{
   width: 100%;
@@ -79,11 +110,11 @@ body{
   text-align: left;
 }
 .carousel-control-next {
-  right: -2em;
+  right: -1vw;
   position: absolute;
 }
 .carousel-control-prev {
-  left: -2em;
+  left: -1vw;
   position: absolute;
 }
 .button-container{
@@ -115,8 +146,7 @@ img{
 .background-pic{
   display:flex;
   position:absolute;
-  width:100vw;
-  height: 100vh;
+  height:100vh;
   overflow: clip;
   z-index: -1;
   border-radius: 0%;
@@ -127,4 +157,36 @@ img{
 }
 .mobile-only{
   display: none;
+}
+p, ul, li, table{
+  -webkit-text-stroke-width: .06em;
+  -webkit-text-stroke-color: var(--stroke-color);
+}
+a{
+  -webkit-text-stroke-width: .01em;
+  -webkit-text-stroke-color: var(--link-stroke-color);
+}
+.hamburger-menu {
+  appearance: none;
+  font-size: 0;
+  width: 7vw;
+  height: 14vh;
+  border: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  
+  span {
+    display: block;
+    width: 60%;
+    height: 2px;
+    background: #000;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: .3px solid white;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
