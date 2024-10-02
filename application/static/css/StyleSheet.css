@@ -29,6 +29,7 @@ body{
   flex-direction: column;
   align-items: center;
   overflow-x: hidden;
+  z-index: -2;
 }
 .navbar{
   /* background-color: var(--main-color); */
