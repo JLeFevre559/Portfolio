@@ -5,3 +5,6 @@ class Index(TemplateView):
 
 class ResumeView(TemplateView):
     template_name = "resume/resume.html"
+
+class ClipboardView(TemplateView):
+    template_name = "projects/clipboard.html"
