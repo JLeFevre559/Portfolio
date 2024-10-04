@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
     /* Styles specific to mobile devices */
     *{
         height: fit-content;
@@ -74,7 +74,10 @@
         transition: -webkit-transform .3s ease;
         transition: transform .3s ease;
         transition: transform .3s ease, -webkit-transform .3s ease;
-      }
+        height: fit-content;
+        position: absolute;
+        left: 0;
+    }
     #myCarousel {
         padding: 1em;
     }
@@ -88,15 +91,13 @@
         color: transparent;
         width:1.2em;
     }
+    .carousel-caption {
+        background-color: var(--background-color-light);
+        box-shadow: 0px 0px 10px 5px black;
+    }
     .carousel-caption h1{
         display: none;
         color: var(--text-heading-color-light);
-    }
-    .carousel-inner{
-        background-color: var(--background-color-light);
-        border: 0px solid var(--border-color);
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px 5px black;
     }
     .button-text {
         position: absolute;
@@ -195,6 +196,11 @@
 
     .carousel-inner {
         height: max-content;
+        height: 80vh;
+        min-height: fit-content;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .carousel-caption > p{
         text-align: center;

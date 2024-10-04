@@ -1,4 +1,12 @@
 /* Styles specific to the Resume page */
-.background-pic{
-    content: url(../images/Estes_Park.jpg);
+@font-face{
+    font-family: 'Almendra Display';
+    src: url(../fonts/Almendra_Display/AlmendraDisplay-Regular.ttf) format('truetype');
+}
+h1{
+    /* font-family: 'Almendra Display', serif;
+    letter-spacing: normal;
+    font-weight: 1000; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--stroke-color);
 }
