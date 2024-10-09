@@ -97,10 +97,10 @@ WSGI_APPLICATION = "vercel_app.wsgi.app"
 # Serverless SQL DBs are recommended 
 # Djongo with mongoDB is not recommended, requires Django downgrade, causing issues
 # Current setup uses .env file for database configuration
-# if "test" in sys.argv:
-#     DATABASES = {
-#         "default": {"ENGINE": "django.db.backends.sqlite3", "NAME": "mydatabase"}
-#     }
+if "test" in sys.argv:
+    DATABASES = {
+        "default": {"ENGINE": "django.db.backends.sqlite3", "NAME": "mydatabase"}
+    }
 # else:
 #     DATABASES = {
 #         "default": {

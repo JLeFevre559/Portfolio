@@ -1,0 +1,72 @@
+<h1>Dev Ops Report</h1>
+<h2>Milestone 7 - Design - Joel LeFevre</h2>
+<hr />
+<h2>MongoDB Scalability Assessment</h2>
+<h3>Current Usage Analysis</h3>
+<ul>
+<li><img alt="Current Usage" src="MongoDBScalability.png" /></li>
+<li>Our current MongoDB usage stands at approximately 606 KB out of the 512MB cap on our free shared plan.<ul>
+<li>Our data usage could potentially grow by approximately 845 times before hitting the storage limit.</li>
+</ul>
+</li>
+</ul>
+<h3>Scaling Options Offered by MongoDB</h3>
+<ul>
+<li>Reviewing <a href="https://www.mongodb.com/pricing">MongoDB's Pricing</a>:</li>
+<li>We have the option to transition to a serverless plan offering up to 1TB of storage at $0.25 per GB-Month.<ul>
+<li>Read operations incur a cost of $0.10 per million times, while write operations cost $1.00 per million writes.</li>
+</ul>
+</li>
+<li>This plan includes 2 free daily backups, with additional restored backups costing $2.50/hour.</li>
+</ul>
+<hr />
+<h2>Vercel Scalability Assessment</h2>
+<h3>Current Usage Overview</h3>
+<ul>
+<li><img alt="Current Usage" src="VercelScalability.png" /></li>
+<li>Our recent usage on Vercel indicates ~400MB of data consumption within the last month, excluding a stress test that consumed ~800MB of bandwidth in November.<ul>
+<li>Given our 100GB cap, the site usage could expand by approximately 250 times before reaching the bandwidth limit.</li>
+</ul>
+</li>
+<li>Noteworthy insights from Vercel's built-in metrics:<ul>
+<li>High execution times were observed on the home page and updating task statuses in the Project page.</li>
+</ul>
+</li>
+</ul>
+<h3>Scaling Options Offered by Vercel</h3>
+<ul>
+<li>Referencing <a href="https://vercel.com/pricing">Vercel's Pricing</a>:</li>
+<li>In case of hitting the 100GB bandwidth cap, an expansion to Vercel's Pro tier at $20 per month per team member is feasible.<ul>
+<li>The Pro tier offers a bandwidth cap one order of magnitude higher and limited DDoS protection not available in the free tier.</li>
+</ul>
+</li>
+<li>Further scalability can be achieved with Vercel's Enterprise tier, offering custom pricing tailored to specific project needs, necessitating engagement with their sales team for specific pricing.</li>
+</ul>
+<hr />
+<h2>Checkly Scalability Assessment</h2>
+<h3>Current Usage Analysis</h3>
+<ul>
+<li><img alt="Current Usage" src="ChecklyScalability.png" /></li>
+<li>Presently, we execute approximately 700 checks monthly, verifying the home page's status hourly and upon each website update.<ul>
+<li>Alerts are triggered via email if the site experiences downtime.</li>
+</ul>
+</li>
+<li>Our current free plan permits 1,500 monthly checks, indicating that we are utilizing around 700 checks.</li>
+</ul>
+<h3>Scaling Options Offered by Checkly</h3>
+<ul>
+<li>Reviewing <a href="https://app.checklyhq.com/billing/">Checkly's Billing Page</a>:</li>
+<li>Upgrading to the Pro plan at $40 per month would allow for checks every 10 minutes, offering 6,000 monthly browser checks.<ul>
+<li>Considering our usage, which amounts to approximately 4,400 browser checks monthly, around 1,600 checks would remain for deployment-related checks.</li>
+</ul>
+</li>
+<li>Additionally, the Pro plan unlocks various alert types, including SMS alerts, enabling quicker notifications within 10 minutes of site downtime.</li>
+</ul>
+<hr />
+<h3>Conclusion</h3>
+<p>This comprehensive report outlines the scalability options available for MongoDB, Vercel, and Checkly monitoring. It provides insights into current usage, potential scalability, and associated costs for each service, ensuring a proactive approach to accommodate the growing needs of our application.</p>
+<p><strong>Next Steps</strong>
+1. Evaluate the projected growth trajectory and align it with the appropriate tier upgrades in MongoDB, Vercel, and Checkly.
+2. Consider cost-effectiveness and benefits for each tier upgrade to optimize resource allocation.
+3. Initiate necessary upgrades to ensure seamless scalability and enhanced performance across the services.</p>
+<p>The detailed assessments provided here offer valuable insights into scaling strategies for MongoDB, Vercel, and Checkly, essential for maintaining application reliability and performance amidst growth.</p>

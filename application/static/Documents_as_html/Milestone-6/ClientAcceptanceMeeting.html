@@ -1,0 +1,157 @@
+<h1>Customer Acceptance meeting - Milestone 6 - Requirements - Joel LeFevre</h1>
+<h3>Meeting Plan</h3>
+<ul>
+<li>
+<p>Issues that need to be pushed to first release</p>
+</li>
+<li>
+<p>Show current release checklist</p>
+</li>
+<li>
+<p>Showcase what we have for first release</p>
+<ul>
+<li>Showcase ClipboardUser Project with tasks</li>
+<li>Show how that shows all our planned functionality for first release is implemented</li>
+<li>Showcase calendar</li>
+<li>Show tasks for previous months as well</li>
+<li>Show that there is a task from another account</li>
+</ul>
+</li>
+<li>
+<p>Show user feedback that we have up to this point</p>
+</li>
+<li>
+<p>Show test coverage</p>
+</li>
+<li>
+<p>Show burndown graph</p>
+</li>
+</ul>
+<h3>Release criteria checklist</h3>
+<h1>Web App Release Criteria</h1>
+<h2>Functionality and User Experience</h2>
+<ul>
+<li>[+] All critical features are fully functional.</li>
+<li>[+] User interfaces are consistent and user-friendly.</li>
+<li>[+] Browser compatibility testing on major browsers (e.g., Chrome, Firefox, Safari, Edge).</li>
+<li>[-] Mobile responsiveness and usability on various devices and screen sizes.<ul>
+<li>We did not develop for mobile use for this release because we expected the majority of users to be on desktop</li>
+</ul>
+</li>
+<li>[+] Accessibility compliance (WCAG) for users with disabilities.<ul>
+<li>Website is usable in greyscale</li>
+<li>Website makes use of header elements to guide screen readers using visual hierarchy</li>
+</ul>
+</li>
+<li>[/] Performance optimizations (e.g., page load times, responsiveness).<ul>
+<li>MongoDB can be slow sometimes, but the website rarely takes more than 2-3 seconds to respond</li>
+</ul>
+</li>
+</ul>
+<h2>Security</h2>
+<ul>
+<li>[-] Comprehensive security testing, including penetration testing.</li>
+<li>[+] Data encryption for sensitive information (HTTPS, SSL/TLS).</li>
+<li>[+] User authentication and authorization mechanisms are secure.</li>
+<li>[+] Protection against common web application vulnerabilities (e.g., XSS, CSRF).</li>
+<li>[-] Regular security audits and updates planned.</li>
+</ul>
+<h2>Testing and Quality Assurance</h2>
+<ul>
+<li>[+] Thorough unit testing for code modules and components.</li>
+<li>[+] Integration testing to ensure different parts of the application work together.</li>
+<li>[+] Regression testing to confirm new changes haven't affected existing functionality.</li>
+<li>[-] Performance testing to check for bottlenecks or scalability issues.</li>
+<li>[-] Compatibility testing on different devices and browsers.</li>
+<li>[/] Test cases for critical user scenarios.<ul>
+<li>We have some test cases that represent critical scenarios</li>
+</ul>
+</li>
+<li>[+] Automated testing scripts and tools are in place.</li>
+<li>[+] Test coverage reports are reviewed.</li>
+</ul>
+<h2>Data Management</h2>
+<ul>
+<li>[/] Database backups and disaster recovery plans.<ul>
+<li>We currently have someone working on a database backup plan</li>
+</ul>
+</li>
+<li>[+] Data migration from the previous version if applicable.</li>
+<li>[+] Data integrity checks and validation.</li>
+<li>[-] Compliance with data protection regulations (e.g., GDPR).<ul>
+<li>We aren't certain what else we would need to be in compliance with GDPR, but we know that currently we are not in compliance since users are unable to delete their accounts without directly contacting the developers. This will be something added in our 1.1 Release</li>
+</ul>
+</li>
+</ul>
+<h2>Deployment</h2>
+<ul>
+<li>[+] Deployment process documented and tested.</li>
+<li>[+] Rollback plan in case of deployment issues.</li>
+<li>[+] Deployed on staging environment for final testing.<ul>
+<li>Checkly tests run before final deployment</li>
+</ul>
+</li>
+<li>[+] Scheduled release date and time confirmed.</li>
+</ul>
+<h2>Monitoring and Logging</h2>
+<ul>
+<li>[+] Monitoring tools and alerts set up (e.g., error tracking, performance monitoring).</li>
+<li>[-] Logging and auditing of user actions and system events.</li>
+<li>[-] Error handling and logging implemented for debugging.</li>
+</ul>
+<h2>Documentation</h2>
+<ul>
+<li>[/] Updated user documentation, including user guides and FAQs.<ul>
+<li>This is in progress, but will be completed by the release day</li>
+</ul>
+</li>
+<li>[/] Internal documentation for developers and support staff.</li>
+<li>[-] Change log and release notes for users and stakeholders.</li>
+</ul>
+<h2>User Acceptance Testing (UAT)</h2>
+<ul>
+<li>[+] Conduct UAT with a select group of users or stakeholders.</li>
+<li>[+] Address and resolve UAT feedback and issues.</li>
+</ul>
+<h2>Support and Training</h2>
+<ul>
+<li>[-] Support team prepared for user inquiries and issues.</li>
+<li>[-] Training for support staff and end-users on new features.</li>
+<li>[-] Helpdesk or support ticket system in place.<ul>
+<li>These features were not part of our initial contract</li>
+</ul>
+</li>
+</ul>
+<h2>Legal and Compliance</h2>
+<ul>
+<li>[/] Compliance with all relevant laws and regulations.</li>
+<li>[+] Licensing and intellectual property rights.<ul>
+<li>We either created our graphics from scratch or used royalty and attribution free icons</li>
+</ul>
+</li>
+</ul>
+<h2>Post-Release Plan</h2>
+<ul>
+<li>[+] Monitoring and support post-release.</li>
+<li>[+] Regular updates and maintenance plan.</li>
+<li>[/] Feedback collection mechanisms for users.</li>
+</ul>
+<h2>Contingency and Rollback</h2>
+<ul>
+<li>[/] Defined rollback procedure in case of critical issues.</li>
+<li>[-] Contingency plan for handling unexpected problems.</li>
+</ul>
+<h2>Stakeholder Communication</h2>
+<ul>
+<li>[+] Notify stakeholders about the release date and any expected downtime.</li>
+<li>[-] Communication plan for keeping stakeholders and users informed.</li>
+</ul>
+<h2>Feedback and Improvement</h2>
+<ul>
+<li>[-] Mechanism for collecting user feedback and bug reports.</li>
+<li>[-] Process for prioritizing and implementing improvements and bug fixes.</li>
+</ul>
+<h3>Client Acceptance Meeting</h3>
+<ul>
+<li>The meeting with the client went well, and they were happy with what they got. However, if this were a real work environment with real money on the line it's likely they would have expected the release checklist to be more filled out.</li>
+</ul>
