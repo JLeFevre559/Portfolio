@@ -7,4 +7,4 @@ class ResumeView(TemplateView):
     template_name = "resume/resume.html"
 
 class ClipboardView(TemplateView):
-    template_name = "projects/clipboard.html"
+    template_name = "projects/clipboard/clipboard.html"

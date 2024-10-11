@@ -142,7 +142,7 @@ def convert_to_html(files, output_folder):
 
 # Convert documents in the input folder to HTML files in the output folder
 if __name__ == '__main__':
-    get_app_dir = os.path.abspath(os.path.join(os.getcwd(), "../Portfolio/application/"))
+    get_app_dir = os.path.abspath(os.path.join(os.getcwd(), "./application/"))
     input_folder = os.path.join(get_app_dir, "static", "Documents")
     output_folder = input_folder + '_as_html'
     print(input_folder, output_folder)
