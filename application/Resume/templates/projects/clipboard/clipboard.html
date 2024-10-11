@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/Clipboard.css' %}">
 {% endblock %}
 
 {% block background %}
@@ -35,16 +36,13 @@
           </div>
           <div class="doc-element-collapse" id="report0">
             <div class="card card-body">
-            Report.md
             {% include './Documents_as_html/Milestone-1/Report.html' %}
             </div>
           </div>
           <div class="doc-element-collapse" id="deploy0">
-            Deploy.md
             {% include './Documents_as_html/Milestone-1/Deploy.html' %}
           </div>
           <div class="doc-element-collapse" id="test0">
-            Test.md
             {% include './Documents_as_html/Milestone-1/Test.html' %}
           </div>
         </div>
@@ -58,7 +56,30 @@
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          <div class="doc-element">
+            {% include './Documents_as_html/Milestone-2/index.html' %}
+          </div>
+          <div class="doc-element-collapse" id="Report1">
+            {% include './Documents_as_html/Milestone-2/Report.html' %}
+          </div>
+          <div class="doc-element-collapse" id="Product_Backlog1">
+            {% include './Documents_as_html/Milestone-2/Product Backlog.html' %}
+          </div>
+          <div class="doc-element-collapse" id="Product_Features_Phase_11">
+            {% include './Documents_as_html/Milestone-2/Product Features for Phase 1 - Minimum Viable Product.html' %}
+          </div>
+          <div class="doc-element-collapse" id="Product_Features_Phase_21">
+            {% include './Documents_as_html/Milestone-2/Product Features for Phase 2 - Future Enhancements.html' %}
+          </div>
+          <div class="doc-element-collapse" id="Product_Overview1">
+            {% include './Documents_as_html/Milestone-2/Product Overview.html' %}
+          </div>
+          <div class="doc-element-collapse" id="Product_Usage1">
+            {% include './Documents_as_html/Milestone-2/Product Usage.html' %}
+          </div>
+          <div class="doc-element-collapse" id="Value_Statement1">
+            {% include './Documents_as_html/Milestone-2/Value Statement.html' %}
+          </div>
         </div>
       </div>
     </div>
