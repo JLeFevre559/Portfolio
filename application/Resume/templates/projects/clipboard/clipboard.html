@@ -34,16 +34,17 @@
           <div class="doc-element">
             {% include './Documents_as_html/Milestone-1/Index.html' %}
           </div>
+          <div class="doc-element description">
+            <p>During milestone 1 I was given the test role, which had the simple role of setting up a host for our project.
+              After meeting with our team we decided on using Vercel for our hosting service, with django as the backend. 
+              We decided on these for a few reasons, including the cost of hosting, the ease of use, and that our team already had experience with these tools.
+              Of course, this decision was not without its drawbacks as well, using a serverless hosting service would mean that we would need to set up a database hosting service as well.
+              <br>Below, find a report of the work I did this milestone, and visit the <a href="https://github.com/jlefevre559/CS350-Clipboard/Documents/Milestone-1/Test">github</a> to see more detailed documentation.
+            </p>
           <div class="doc-element-collapse" id="report0">
             <div class="card card-body">
             {% include './Documents_as_html/Milestone-1/Report.html' %}
             </div>
-          </div>
-          <div class="doc-element-collapse" id="deploy0">
-            {% include './Documents_as_html/Milestone-1/Deploy.html' %}
-          </div>
-          <div class="doc-element-collapse" id="test0">
-            {% include './Documents_as_html/Milestone-1/Test.html' %}
           </div>
         </div>
       </div>
@@ -51,7 +52,7 @@
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Accordion Item #2
+          Milestone-2 - Product Backlog
         </button>
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -59,27 +60,19 @@
           <div class="doc-element">
             {% include './Documents_as_html/Milestone-2/index.html' %}
           </div>
+          <div class="doc-element description">
+            <p> 
+              In Milestone 2, I was the Requirements role, which had the pivotal role of creating a detailed list of the features and user 
+              stories we were going to implement in our project. This was a very important step in the Software Engineering process, as it
+              defined the functionalities and cutoff points in our project. After speaking with the team and deciding on functionalities,
+              I turned the functionalities into user stories and created a product backlog. I prioritized the user stories to create a Minimum Viable Product,
+              alongside potential future enhancements post "release" at the end of the semester.
+              <br>Below, find a report of the work I did this milestone, and visit the <a href="https://github.com/jlefevre559/CS350-Clipboard/Documents/Milestone-2/Requirements">github</a> to see more detailed documentation.
+            </p>
+          </div>
           <div class="doc-element-collapse" id="Report1">
             {% include './Documents_as_html/Milestone-2/Report.html' %}
-          </div>
-          <div class="doc-element-collapse" id="Product_Backlog1">
-            {% include './Documents_as_html/Milestone-2/Product Backlog.html' %}
-          </div>
-          <div class="doc-element-collapse" id="Product_Features_Phase_11">
-            {% include './Documents_as_html/Milestone-2/Product Features for Phase 1 - Minimum Viable Product.html' %}
-          </div>
-          <div class="doc-element-collapse" id="Product_Features_Phase_21">
-            {% include './Documents_as_html/Milestone-2/Product Features for Phase 2 - Future Enhancements.html' %}
-          </div>
-          <div class="doc-element-collapse" id="Product_Overview1">
-            {% include './Documents_as_html/Milestone-2/Product Overview.html' %}
-          </div>
-          <div class="doc-element-collapse" id="Product_Usage1">
-            {% include './Documents_as_html/Milestone-2/Product Usage.html' %}
-          </div>
-          <div class="doc-element-collapse" id="Value_Statement1">
-            {% include './Documents_as_html/Milestone-2/Value Statement.html' %}
-          </div>
+          </div>  
         </div>
       </div>
     </div>
@@ -94,23 +87,19 @@
           <div class="doc-element">
             {% include './Documents_as_html/Milestone-3/Index.html' %}
           </div>
-          <div class="doc-element-collapse" id="DatabaseRelationships2">
-            {% include './Documents_as_html/Milestone-3/DatabaseRelationships.html' %}
-          </div>
-          <div class="doc-element-collapse" id="Design2">
-            {% include './Documents_as_html/Milestone-3/Design.html' %}
-          </div>
-          <div class="doc-element-collapse" id="DevelopmentGuide2">
-            {% include './Documents_as_html/Milestone-3/DevelopmentGuide.html' %}
-          </div>
-          <div class="doc-element-collapse" id="Models-Code2">
-            {% include './Documents_as_html/Milestone-3/Models-Code.html' %}
+          <div class="doc-element description">
+            <p>
+              In Milestone 3, I was the Design role, which had the responsibility of finishing design for our database structure on our project. 
+              I built on the work of my team members in the previous milestones to create a detailed database structure that would support the features we had planned.
+              This included creating ERDs using DBML to visualize the relationships between our tables, and creating a detailed design document that would guide the development of our project.
+              I created a reverse hierarchical relational database structure, where the tasks would store their tasklist, tasklist their project, and projects the user.
+              I also connected our project with MongoDB, created a .env to secure our database, and created create, read, and delete operations for our project model.
+              In addition, I also used a team member's previous work on a logo to create a favicon for our site.
+              <br>Below, find a report of the work I did this milestone, and visit the <a href="https://github.com/jlefevre559/CS350-Clipboard/Documents/Milestone-3/Design">github</a> to see more detailed documentation.
+            </p>
           </div>
           <div class="doc-element-collapse" id="Report2">
             {% include './Documents_as_html/Milestone-3/Report.html' %}
-          </div>
-          <div class="doc-element-collapse" id="Views-Code2">
-            {% include './Documents_as_html/Milestone-3/Views-Code.html' %}
           </div>
         </div>
       </div>
@@ -118,13 +107,22 @@
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Milestone-3
+          Milestone-4
         </button>
       </h2>
       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
           <div class="doc-element">
             {% include './Documents_as_html/Milestone-4/Index.html' %}
+          </div>
+          <div class="doc-element description">
+            <p>
+              In Milestone 4, I was the Code role, which had the responsibility of implementing the features we had planned in Milestone 2.
+              I worked with my team members to decide which features we would be able to implement this milestone, since it was clear that we would not be able to implement all of them in the time we had.
+              With our focus on test-driven development, I used my teammate's previous work on tests to create a test.py file I could add to as I worked on the features.
+              Using this work, I was able to implement the views, CRUD operations, and tests for Projects, Tasklists, and Tasks.
+              I also fleshed out our sign up page, and added issues I found to our github, so that we could work on them in the future.
+            </p>
           </div>
           <div class="doc-element-collapse" id="All-Features-Implemented3">
             {% include './Documents_as_html/Milestone-4/All-Features-Implemented.html' %}

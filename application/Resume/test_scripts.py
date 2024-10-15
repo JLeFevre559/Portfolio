@@ -132,11 +132,12 @@ This is a **bold** statement.
 <p>This is a <strong>bold</strong> statement.</p>
 <h2>Unordered List</h2>
 <ul>
-<li>Item 1</li>
-<li>Item 2<ul>
-<li>Nested Item</li>
-</ul>
-</li>
+    <li>Item 1</li>
+    <li>Item 2
+        <ul>
+            <li>Nested Item</li>
+        </ul>
+    </li>
 </ul>
 <h2>Ordered List</h2>
 <ol>
