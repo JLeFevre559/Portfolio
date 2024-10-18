@@ -32,15 +32,17 @@
       <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
         <div class="accordion-body">
           <div class="doc-element">
-            {% include './Documents_as_html/Milestone-1/Index.html' %}
+            <a href="#" class="toggle-link" data-target="description0">Show Description</a><br>
+            <a href="#" class="toggle-link" data-target="report0">Show Report.md</a><br>
           </div>
-          <div class="doc-element description">
+          <div class="doc-element-collapse" id="description0" style="display:flex">
             <p>During milestone 1 I was given the test role, which had the simple role of setting up a host for our project.
               After meeting with our team we decided on using Vercel for our hosting service, with django as the backend. 
               We decided on these for a few reasons, including the cost of hosting, the ease of use, and that our team already had experience with these tools.
               Of course, this decision was not without its drawbacks as well, using a serverless hosting service would mean that we would need to set up a database hosting service as well.
               <br>Below, find a report of the work I did this milestone, and visit the <a href="https://github.com/jlefevre559/CS350-Clipboard/Documents/Milestone-1/Test">github</a> to see more detailed documentation.
             </p>
+          </div>
           <div class="doc-element-collapse" id="report0">
             <div class="card card-body">
             {% include './Documents_as_html/Milestone-1/Report.html' %}
@@ -58,9 +60,10 @@
       <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
           <div class="doc-element">
-            {% include './Documents_as_html/Milestone-2/index.html' %}
+            <a href="#" class="toggle-link" data-target="description1">Show Description</a><br>
+            <a href="#" class="toggle-link" data-target="report1">Show Report.md</a><br>
           </div>
-          <div class="doc-element description">
+          <div class="doc-element-collapse" id="description1" style="display:flex">
             <p> 
               In Milestone 2, I was the Requirements role, which had the pivotal role of creating a detailed list of the features and user 
               stories we were going to implement in our project. This was a very important step in the Software Engineering process, as it
@@ -85,9 +88,10 @@
       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
           <div class="doc-element">
-            {% include './Documents_as_html/Milestone-3/Index.html' %}
+            <a href="#" class="toggle-link" data-target="description2">Show Description</a><br>
+            <a href="#" class="toggle-link" data-target="report2">Show Report.md</a><br>
           </div>
-          <div class="doc-element description">
+          <div class="doc-element-collapse" id="description2" style="display:flex">
             <p>
               In Milestone 3, I was the Design role, which had the responsibility of finishing design for our database structure on our project. 
               I built on the work of my team members in the previous milestones to create a detailed database structure that would support the features we had planned.
@@ -113,9 +117,10 @@
       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
           <div class="doc-element">
-            {% include './Documents_as_html/Milestone-4/Index.html' %}
+            <a href="#" class="toggle-link" data-target="description3">Show Description</a><br>
+            <a href="#" class="toggle-link" data-target="report3">Show Report.md</a><br>
           </div>
-          <div class="doc-element description">
+          <div class="doc-element-collapse" id="description3" style="display:flex">
             <p>
               In Milestone 4, I was the Code role, which had the responsibility of implementing the features we had planned in Milestone 2.
               I worked with my team members to decide which features we would be able to implement this milestone, since it was clear that we would not be able to implement all of them in the time we had.
@@ -140,9 +145,10 @@
       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
           <div class="doc-element">
-            {% include './Documents_as_html/Milestone-5/Index.html' %}
+            <a href="#" class="toggle-link" data-target="description4">Show Description</a><br>
+            <a href="#" class="toggle-link" data-target="report4">Show Report.md</a><br>
           </div>
-          <div class="doc-element description">
+          <div class="doc-element-collapse" id="description4" style="display:flex">
             <p>
               In Milestone 5 I was the Test role, which had the important position of ensuring we were meeting our goal of at least 90% test coverage and
               50% of our overall code was tests. Throughout this milestone I reorganized our test code into multiple files to increase readability,
@@ -165,9 +171,10 @@
       <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
         <div class="accordion-body">
           <div class="doc-element">
-            {% include './Documents_as_html/Milestone-6/Index.html' %}
+            <a href="#" class="toggle-link" data-target="description5">Show Description</a><br>
+            <a href="#" class="toggle-link" data-target="report5">Show Report.md</a><br>
           </div>
-          <div class="doc-element description">
+          <div class="doc-element-collapse" id="description5" style="display:flex">
             <p>
               In the final milestone I was the Design role, and my assignment in this role was to look into the possible future of this project
               and create a devops report. I checked the scalability and cost of the three different services we were using, Vercel for hosting, MongoDB for Databases,
@@ -181,6 +188,7 @@
           </div>
         </div>
       </div>
+    </div>
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -190,9 +198,10 @@
         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
           <div class="accordion-body">
             <div class="doc-element">
-              {% include './Documents_as_html/Milestone-7/Index.html' %}
+              <a href="#" class="toggle-link" data-target="description6">Show Description</a><br>
+              <a href="#" class="toggle-link" data-target="report6">Show Report.md</a><br>
             </div>
-            <div class="doc-element description">
+            <div class="doc-element-collapse" id="description6" style="display:flex">
               <p>
                 In Milestone 6 I was the requirements role, which had the assignment of preparing for and presenting our project in the client acceptance meeting. To prepare for this meeting, I first worked with the team to 
                 close the remaining issues on github, created a production branch on github, changed our live website to the production branch, got feedback from live users, created a burndown graph, and prepared a presentation.
@@ -206,6 +215,7 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
   </div>
 
